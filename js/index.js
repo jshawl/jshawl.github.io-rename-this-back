@@ -29,7 +29,7 @@ function render( repos ){
   for ( repo in repos ) { 
     repo = repos[repo];
     var link = document.createElement('a'); 
-    link.href = repo.contents_url;
+    link.href = repo.html_url;
     var text = document.createTextNode(repo.name);  
     link.appendChild(text);
     
